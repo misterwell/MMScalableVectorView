@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5D820161854EE20000E47D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D820151854EE20000E47D5 /* Foundation.framework */; };
+		F5D820241854EE20000E47D5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D820231854EE20000E47D5 /* XCTest.framework */; };
+		F5D820251854EE20000E47D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D820151854EE20000E47D5 /* Foundation.framework */; };
+		F5D820271854EE20000E47D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D820261854EE20000E47D5 /* UIKit.framework */; };
+		F5D8202A1854EE20000E47D5 /* libMMScalableVector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D820121854EE20000E47D5 /* libMMScalableVector.a */; };
+		F5D820301854EE21000E47D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D8202E1854EE21000E47D5 /* InfoPlist.strings */; };
+		F5D820321854EE21000E47D5 /* MMScalableVectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D820311854EE21000E47D5 /* MMScalableVectorTests.m */; };
+		F5D8203D1854EE6B000E47D5 /* MMVectorGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8203C1854EE6B000E47D5 /* MMVectorGraphic.m */; };
+		F5D8203E1854EE6B000E47D5 /* MMVectorGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8203C1854EE6B000E47D5 /* MMVectorGraphic.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5D820281854EE20000E47D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5D8200A1854EE20000E47D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5D820111854EE20000E47D5;
+			remoteInfo = MMScalableVector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5D820101854EE20000E47D5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F5D820121854EE20000E47D5 /* libMMScalableVector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMScalableVector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D820151854EE20000E47D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5D820191854EE20000E47D5 /* MMScalableVector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMScalableVector-Prefix.pch"; sourceTree = "<group>"; };
+		F5D820221854EE20000E47D5 /* MMScalableVectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMScalableVectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D820231854EE20000E47D5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F5D820261854EE20000E47D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F5D8202D1854EE21000E47D5 /* MMScalableVectorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMScalableVectorTests-Info.plist"; sourceTree = "<group>"; };
+		F5D8202F1854EE21000E47D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5D820311854EE21000E47D5 /* MMScalableVectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMScalableVectorTests.m; sourceTree = "<group>"; };
+		F5D8203B1854EE6B000E47D5 /* MMVectorGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVectorGraphic.h; sourceTree = "<group>"; };
+		F5D8203C1854EE6B000E47D5 /* MMVectorGraphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVectorGraphic.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5D8200F1854EE20000E47D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D820161854EE20000E47D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D8201F1854EE20000E47D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D820241854EE20000E47D5 /* XCTest.framework in Frameworks */,
+				F5D820271854EE20000E47D5 /* UIKit.framework in Frameworks */,
+				F5D820251854EE20000E47D5 /* Foundation.framework in Frameworks */,
+				F5D8202A1854EE20000E47D5 /* libMMScalableVector.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5D820091854EE20000E47D5 = {
+			isa = PBXGroup;
+			children = (
+				F5D820171854EE20000E47D5 /* MMScalableVector */,
+				F5D8202B1854EE21000E47D5 /* MMScalableVectorTests */,
+				F5D820141854EE20000E47D5 /* Frameworks */,
+				F5D820131854EE20000E47D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5D820131854EE20000E47D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5D820121854EE20000E47D5 /* libMMScalableVector.a */,
+				F5D820221854EE20000E47D5 /* MMScalableVectorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D820141854EE20000E47D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D820151854EE20000E47D5 /* Foundation.framework */,
+				F5D820231854EE20000E47D5 /* XCTest.framework */,
+				F5D820261854EE20000E47D5 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5D820171854EE20000E47D5 /* MMScalableVector */ = {
+			isa = PBXGroup;
+			children = (
+				F5D8203B1854EE6B000E47D5 /* MMVectorGraphic.h */,
+				F5D8203C1854EE6B000E47D5 /* MMVectorGraphic.m */,
+				F5D820181854EE20000E47D5 /* Supporting Files */,
+			);
+			path = MMScalableVector;
+			sourceTree = "<group>";
+		};
+		F5D820181854EE20000E47D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5D820191854EE20000E47D5 /* MMScalableVector-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5D8202B1854EE21000E47D5 /* MMScalableVectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5D820311854EE21000E47D5 /* MMScalableVectorTests.m */,
+				F5D8202C1854EE21000E47D5 /* Supporting Files */,
+			);
+			path = MMScalableVectorTests;
+			sourceTree = "<group>";
+		};
+		F5D8202C1854EE21000E47D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5D8202D1854EE21000E47D5 /* MMScalableVectorTests-Info.plist */,
+				F5D8202E1854EE21000E47D5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5D820111854EE20000E47D5 /* MMScalableVector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D820351854EE21000E47D5 /* Build configuration list for PBXNativeTarget "MMScalableVector" */;
+			buildPhases = (
+				F5D8200E1854EE20000E47D5 /* Sources */,
+				F5D8200F1854EE20000E47D5 /* Frameworks */,
+				F5D820101854EE20000E47D5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMScalableVector;
+			productName = MMScalableVector;
+			productReference = F5D820121854EE20000E47D5 /* libMMScalableVector.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F5D820211854EE20000E47D5 /* MMScalableVectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D820381854EE21000E47D5 /* Build configuration list for PBXNativeTarget "MMScalableVectorTests" */;
+			buildPhases = (
+				F5D8201E1854EE20000E47D5 /* Sources */,
+				F5D8201F1854EE20000E47D5 /* Frameworks */,
+				F5D820201854EE20000E47D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5D820291854EE20000E47D5 /* PBXTargetDependency */,
+			);
+			name = MMScalableVectorTests;
+			productName = MMScalableVectorTests;
+			productReference = F5D820221854EE20000E47D5 /* MMScalableVectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5D8200A1854EE20000E47D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Michael Maxwell";
+			};
+			buildConfigurationList = F5D8200D1854EE20000E47D5 /* Build configuration list for PBXProject "MMScalableVector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5D820091854EE20000E47D5;
+			productRefGroup = F5D820131854EE20000E47D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5D820111854EE20000E47D5 /* MMScalableVector */,
+				F5D820211854EE20000E47D5 /* MMScalableVectorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5D820201854EE20000E47D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D820301854EE21000E47D5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5D8200E1854EE20000E47D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D8203D1854EE6B000E47D5 /* MMVectorGraphic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D8201E1854EE20000E47D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D820321854EE21000E47D5 /* MMScalableVectorTests.m in Sources */,
+				F5D8203E1854EE6B000E47D5 /* MMVectorGraphic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5D820291854EE20000E47D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5D820111854EE20000E47D5 /* MMScalableVector */;
+			targetProxy = F5D820281854EE20000E47D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5D8202E1854EE21000E47D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D8202F1854EE21000E47D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5D820331854EE21000E47D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5D820341854EE21000E47D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5D820361854EE21000E47D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MMScalableVector.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMScalableVector/MMScalableVector-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F5D820371854EE21000E47D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MMScalableVector.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMScalableVector/MMScalableVector-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F5D820391854EE21000E47D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMScalableVector/MMScalableVector-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MMScalableVectorTests/MMScalableVectorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F5D8203A1854EE21000E47D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMScalableVector/MMScalableVector-Prefix.pch";
+				INFOPLIST_FILE = "MMScalableVectorTests/MMScalableVectorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5D8200D1854EE20000E47D5 /* Build configuration list for PBXProject "MMScalableVector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D820331854EE21000E47D5 /* Debug */,
+				F5D820341854EE21000E47D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D820351854EE21000E47D5 /* Build configuration list for PBXNativeTarget "MMScalableVector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D820361854EE21000E47D5 /* Debug */,
+				F5D820371854EE21000E47D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5D820381854EE21000E47D5 /* Build configuration list for PBXNativeTarget "MMScalableVectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D820391854EE21000E47D5 /* Debug */,
+				F5D8203A1854EE21000E47D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5D8200A1854EE20000E47D5 /* Project object */;
+}
