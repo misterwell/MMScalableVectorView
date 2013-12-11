@@ -13,15 +13,21 @@
  */
 void (^drawTestVector)(void) = ^{
     //// General Declarations
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     //// Color Declarations
     UIColor* circleFillColor = [UIColor colorWithRed: 0.247 green: 0.431 blue: 0.71 alpha: 1];
     UIColor* white = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
+    UIColor* yellow = [UIColor colorWithRed: 1 green: 0.737 blue: 0.282 alpha: 1];
+    UIColor* orange = [UIColor colorWithRed: 1 green: 0.855 blue: 0.608 alpha: 1];
     
-    //// Abstracted Attributes
-    NSString* textContent = @"Test Text!";
-    
+    //// Gradient Declarations
+    NSArray* gradientColors = [NSArray arrayWithObjects:
+                               (id)yellow.CGColor,
+                               (id)orange.CGColor, nil];
+    CGFloat gradientLocations[] = {0, 1};
+    CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)gradientColors, gradientLocations);
     
     //// User circle
     {
@@ -80,8 +86,13 @@ void (^drawTestVector)(void) = ^{
             [bezier3Path closePath];
             bezier3Path.miterLimit = 4;
             
-            [white setFill];
-            [bezier3Path fill];
+            CGContextSaveGState(context);
+            [bezier3Path addClip];
+            CGContextDrawLinearGradient(context, gradient,
+                                        CGPointMake(197.25, 340.51),
+                                        CGPointMake(199.5, 151.86),
+                                        kCGGradientDrawsBeforeStartLocation | kCGGradientDrawsAfterEndLocation);
+            CGContextRestoreGState(context);
             
             
             CGContextRestoreGState(context);
@@ -102,17 +113,10 @@ void (^drawTestVector)(void) = ^{
     }
     
     
-    //// Text Drawing
-    CGRect textRect = CGRectMake(146, 171, 107, 28);
-    NSMutableParagraphStyle* textStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
-    [textStyle setAlignment: NSTextAlignmentCenter];
+    //// Cleanup
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorSpace);
     
-    NSDictionary* textFontAttributes = @{NSFontAttributeName: [UIFont fontWithName: @"Helvetica" size: 24], NSForegroundColorAttributeName: [UIColor blackColor], NSParagraphStyleAttributeName: textStyle};
-    
-    [textContent drawInRect: textRect withAttributes: textFontAttributes];
-    
-    
-
 };
 
 
