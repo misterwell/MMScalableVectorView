@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michael Maxwell. All rights reserved.
 //
 
-#import "MMVectorGraphic.h"
+#import "MMScalableVectorView.h"
 
 /**
  *  Example of a traditional UIView subclass that draws the vector image in its drawRect implementation.
@@ -17,5 +17,5 @@
 /**
  *  Example showing that subclassing the VectorGraphic class will cause the vector graphic to scale according to the contentMode property of the UIView.
  */
-@interface ScalableTestVector : MMScalableVector
+@interface ScalableTestVector : MMScalableVectorView
 @end

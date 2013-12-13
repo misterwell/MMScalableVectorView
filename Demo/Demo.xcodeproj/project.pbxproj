@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F550170A185AF13900D7542D /* MMScalableVectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5501709185AF13900D7542D /* MMScalableVectorView.m */; };
 		F5D8204C1854F003000E47D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D8204B1854F003000E47D5 /* Foundation.framework */; };
 		F5D8204E1854F003000E47D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D8204D1854F003000E47D5 /* CoreGraphics.framework */; };
 		F5D820501854F004000E47D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D8204F1854F003000E47D5 /* UIKit.framework */; };
@@ -23,7 +24,6 @@
 		F5D8208B1854F068000E47D5 /* VectorTestClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D820881854F068000E47D5 /* VectorTestClasses.m */; };
 		F5D820901854F078000E47D5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D8208C1854F078000E47D5 /* Main_iPad.storyboard */; };
 		F5D820911854F078000E47D5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D8208E1854F078000E47D5 /* Main_iPhone.storyboard */; };
-		F5D820961854F12B000E47D5 /* MMVectorGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D820951854F12B000E47D5 /* MMVectorGraphic.m */; };
 		F5D8209A185647CC000E47D5 /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D82099185647CC000E47D5 /* TransformViewController.m */; };
 		F5D8209E1856779A000E47D5 /* ImageExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8209D1856779A000E47D5 /* ImageExampleViewController.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5501708185AF13900D7542D /* MMScalableVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMScalableVectorView.h; sourceTree = "<group>"; };
+		F5501709185AF13900D7542D /* MMScalableVectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMScalableVectorView.m; sourceTree = "<group>"; };
 		F5D820481854F003000E47D5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D8204B1854F003000E47D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5D8204D1854F003000E47D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,8 +63,6 @@
 		F5D820881854F068000E47D5 /* VectorTestClasses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VectorTestClasses.m; sourceTree = "<group>"; };
 		F5D8208D1854F078000E47D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		F5D8208F1854F078000E47D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		F5D820941854F12B000E47D5 /* MMVectorGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVectorGraphic.h; sourceTree = "<group>"; };
-		F5D820951854F12B000E47D5 /* MMVectorGraphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVectorGraphic.m; sourceTree = "<group>"; };
 		F5D82098185647CC000E47D5 /* TransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformViewController.h; sourceTree = "<group>"; };
 		F5D82099185647CC000E47D5 /* TransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformViewController.m; sourceTree = "<group>"; };
 		F5D8209C1856779A000E47D5 /* ImageExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageExampleViewController.h; sourceTree = "<group>"; };
@@ -93,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5501706185AF13900D7542D /* MMScalableVector */ = {
+			isa = PBXGroup;
+			children = (
+				F5501708185AF13900D7542D /* MMScalableVectorView.h */,
+				F5501709185AF13900D7542D /* MMScalableVectorView.m */,
+			);
+			name = MMScalableVector;
+			path = ../MMScalableVector;
+			sourceTree = "<group>";
+		};
 		F5D8203F1854F003000E47D5 = {
 			isa = PBXGroup;
 			children = (
@@ -184,8 +194,7 @@
 		F5D820931854F117000E47D5 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				F5D820941854F12B000E47D5 /* MMVectorGraphic.h */,
-				F5D820951854F12B000E47D5 /* MMVectorGraphic.m */,
+				F5501706185AF13900D7542D /* MMScalableVector */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -298,10 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F550170A185AF13900D7542D /* MMScalableVectorView.m in Sources */,
 				F5D8209E1856779A000E47D5 /* ImageExampleViewController.m in Sources */,
 				F5D8208B1854F068000E47D5 /* VectorTestClasses.m in Sources */,
 				F5D820891854F068000E47D5 /* TestSelectionViewController.m in Sources */,
-				F5D820961854F12B000E47D5 /* MMVectorGraphic.m in Sources */,
 				F5D8205C1854F004000E47D5 /* MMAppDelegate.m in Sources */,
 				F5D820581854F004000E47D5 /* main.m in Sources */,
 				F5D8209A185647CC000E47D5 /* TransformViewController.m in Sources */,

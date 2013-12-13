@@ -5,13 +5,13 @@
 //  Copyright (c) 2013 Michael Maxwell. All rights reserved.
 //
 
-#import "MMVectorGraphic.h"
+#import "MMScalableVectorView.h"
 
-@interface VectorGraphic ()
+@interface MMScalableVectorView ()
 
 @end
 
-@implementation VectorGraphic
+@implementation MMScalableVectorView
 
 - (void)drawRect:(CGRect)rect
 {

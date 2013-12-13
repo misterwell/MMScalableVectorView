@@ -28,7 +28,7 @@
 /**
  *  Vector drawing classes should subclass the VectorGraphic class to make their vector images scale based on the UIView.contentMode property.
  */
-@interface VectorGraphic : UIView <VectorGraphicDrawer>
+@interface MMScalableVectorView : UIView <VectorGraphicDrawer>
 
 /**
  *  Returns a UIImage representation of the receiver. This is useful if you can't pass a UIView to another component, i.e. a UIButton background image.
