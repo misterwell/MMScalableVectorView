@@ -38,13 +38,13 @@ NSString *const CellInfoSegueIdentifier     = @"segue";
                      CellInfoSubtitle:@"How vectors look using simple copy/paste",
                      CellInfoSegueIdentifier:@"ShowNormalVectors"},
                    @{CellInfoTitle:@"Using MMScalableVectorView",
-                     CellInfoSubtitle:@"Observe vectors scaling properly!",
+                     CellInfoSubtitle:@"See the class doing it's thing",
                      CellInfoSegueIdentifier:@"ShowImprovedVectors"},
-                   @{CellInfoTitle:@"Animations",
-                     CellInfoSubtitle:@"Show differences in how animations are handled",
+                   @{CellInfoTitle:@"Transform",
+                     CellInfoSubtitle:@"Modifying a vector's transform",
                      CellInfoSegueIdentifier:@"ShowNormalVectorAnimations"},
                    @{CellInfoTitle:@"Convert to UIImage",
-                     CellInfoSubtitle:@"Easily convert MMScalableVectorView to UIImage",
+                     CellInfoSubtitle:@"Convert MMScalableVectorView to UIImage",
                      CellInfoSegueIdentifier:@"ShowImageExamples"}
                    ];
 }
@@ -76,12 +76,6 @@ NSString *const CellInfoSegueIdentifier     = @"segue";
 {
     [self performSegueWithIdentifier:[[dataSource objectAtIndex:indexPath.row] valueForKey:CellInfoSegueIdentifier]
                               sender:[self.tableView cellForRowAtIndexPath:indexPath]];
-}
-
-#pragma mark - Navigation
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
 }
 
 @end
