@@ -5,6 +5,7 @@
 //  Copyright (c) 2013 Michael Maxwell. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 /**

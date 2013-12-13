@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F550170D185B804100D7542D /* MMScalableVectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F550170C185B804100D7542D /* MMScalableVectorView.m */; };
 		F5D820161854EE20000E47D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D820151854EE20000E47D5 /* Foundation.framework */; };
 		F5D820241854EE20000E47D5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D820231854EE20000E47D5 /* XCTest.framework */; };
 		F5D820251854EE20000E47D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D820151854EE20000E47D5 /* Foundation.framework */; };
@@ -14,8 +15,6 @@
 		F5D8202A1854EE20000E47D5 /* libMMScalableVector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D820121854EE20000E47D5 /* libMMScalableVector.a */; };
 		F5D820301854EE21000E47D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D8202E1854EE21000E47D5 /* InfoPlist.strings */; };
 		F5D820321854EE21000E47D5 /* MMScalableVectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D820311854EE21000E47D5 /* MMScalableVectorTests.m */; };
-		F5D8203D1854EE6B000E47D5 /* MMVectorGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8203C1854EE6B000E47D5 /* MMVectorGraphic.m */; };
-		F5D8203E1854EE6B000E47D5 /* MMVectorGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8203C1854EE6B000E47D5 /* MMVectorGraphic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,17 +40,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F550170B185B804100D7542D /* MMScalableVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMScalableVectorView.h; sourceTree = "<group>"; };
+		F550170C185B804100D7542D /* MMScalableVectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMScalableVectorView.m; sourceTree = "<group>"; };
 		F5D820121854EE20000E47D5 /* libMMScalableVector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMScalableVector.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D820151854EE20000E47D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F5D820191854EE20000E47D5 /* MMScalableVector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMScalableVector-Prefix.pch"; sourceTree = "<group>"; };
 		F5D820221854EE20000E47D5 /* MMScalableVectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMScalableVectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D820231854EE20000E47D5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F5D820261854EE20000E47D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F5D8202D1854EE21000E47D5 /* MMScalableVectorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMScalableVectorTests-Info.plist"; sourceTree = "<group>"; };
 		F5D8202F1854EE21000E47D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5D820311854EE21000E47D5 /* MMScalableVectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMScalableVectorTests.m; sourceTree = "<group>"; };
-		F5D8203B1854EE6B000E47D5 /* MMVectorGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVectorGraphic.h; sourceTree = "<group>"; };
-		F5D8203C1854EE6B000E47D5 /* MMVectorGraphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVectorGraphic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +107,8 @@
 		F5D820171854EE20000E47D5 /* MMScalableVector */ = {
 			isa = PBXGroup;
 			children = (
-				F5D8203B1854EE6B000E47D5 /* MMVectorGraphic.h */,
-				F5D8203C1854EE6B000E47D5 /* MMVectorGraphic.m */,
+				F550170B185B804100D7542D /* MMScalableVectorView.h */,
+				F550170C185B804100D7542D /* MMScalableVectorView.m */,
 				F5D820181854EE20000E47D5 /* Supporting Files */,
 			);
 			path = MMScalableVector;
@@ -119,7 +117,6 @@
 		F5D820181854EE20000E47D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5D820191854EE20000E47D5 /* MMScalableVector-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -223,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5D8203D1854EE6B000E47D5 /* MMVectorGraphic.m in Sources */,
+				F550170D185B804100D7542D /* MMScalableVectorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5D820321854EE21000E47D5 /* MMScalableVectorTests.m in Sources */,
-				F5D8203E1854EE6B000E47D5 /* MMVectorGraphic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +329,6 @@
 			buildSettings = {
 				DSTROOT = /tmp/MMScalableVector.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MMScalableVector/MMScalableVector-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -345,7 +340,6 @@
 			buildSettings = {
 				DSTROOT = /tmp/MMScalableVector.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MMScalableVector/MMScalableVector-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -409,6 +403,7 @@
 				F5D820371854EE21000E47D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5D820381854EE21000E47D5 /* Build configuration list for PBXNativeTarget "MMScalableVectorTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +412,7 @@
 				F5D8203A1854EE21000E47D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
