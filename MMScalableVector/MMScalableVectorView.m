@@ -18,7 +18,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context);
     
-    [self applyCTMTransformsForContext:context];
+    [self applyCTMTransformsForContext:context viewSize:self.bounds.size];
     [self drawInCurrentContext];
     CGContextRestoreGState(context);
     
@@ -27,7 +27,7 @@
 - (UIImage *)getImageWithSize:(CGSize)size
 {
     UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
-    [self applyCTMTransformsForContext:UIGraphicsGetCurrentContext()];
+    [self applyCTMTransformsForContext:UIGraphicsGetCurrentContext() viewSize:size];
     [self drawInCurrentContext];
     UIImage *returnImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -35,10 +35,9 @@
     return returnImage;
 }
 
-- (void)applyCTMTransformsForContext:(CGContextRef)context
+- (void)applyCTMTransformsForContext:(CGContextRef)context viewSize:(CGSize)viewSize
 {
     CGSize graphicSize = [self originalSize];
-    CGSize viewSize = self.bounds.size;
 
     switch(self.contentMode)
     {
