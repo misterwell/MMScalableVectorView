@@ -13,10 +13,14 @@ Turns static PaintCode or Qwarkee code into a UIView that honors its contentMode
 
 
 ## Installation
-##### CocoaPods
-
-##### Manually
+#### CocoaPods
+	pod "MMScalableVectorView"
+#### Manually
 Just import MMScalableVectorView.m & .h into your project directly.
+#### Requirements
+* iOS 4.x or higher
+* CoreGraphics framework
+* ARC
 
 ## Usage
 
@@ -26,10 +30,10 @@ Just import MMScalableVectorView.m & .h into your project directly.
 	2. Implement `originalSize` to return a `CGSize` structure for the native size of the vector graphic.
 3. Use the newly created class as a normal UIView, setting the `contentMode` property as desired before the view is drawn. This can be done in Interface Builder or programatically.
 
+## Demo
+Run `pod install` inside the Demo folder, then load the Demo workspace & run!
 
 ## Future Improvements
-  
-  
-UIView category with a block-based initializer for one-stop creation of vector-backed UIViews.
-Improving drawing when UIView’s transform property is used (?)
-Unit tests!
+1. UIView category with a block-based initializer for one-step creation of vector-backed UIViews.
+2. Improving drawing when UIView’s transform property is used (?)
+3. Unit tests!
