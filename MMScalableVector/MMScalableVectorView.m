@@ -8,10 +8,22 @@
 #import "MMScalableVectorView.h"
 
 @interface MMScalableVectorView ()
-
+@property (nonatomic, copy) void (^drawingBlock)();
+@property (nonatomic, assign) CGSize originalSize;
 @end
 
 @implementation MMScalableVectorView
+
+- (id)initWithFrame:(CGRect)frame drawingBlock:(void (^)(void))drawingBlock originalSize:(CGSize)originalSize
+{
+    self = [super initWithFrame:frame];
+    if (self)
+    {
+        self.drawingBlock = drawingBlock;
+        self.originalSize = originalSize;
+    }
+    return self;
+}
 
 - (void)drawRect:(CGRect)rect
 {
@@ -21,7 +33,18 @@
     [self applyCTMTransformsForContext:context viewSize:self.bounds.size];
     [self drawInCurrentContext];
     CGContextRestoreGState(context);
+}
+
+- (void)drawInFrame:(CGRect)frame
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(context);
     
+    CGContextTranslateCTM(context, frame.origin.x, frame.origin.y);
+    [self applyCTMTransformsForContext:context viewSize:frame.size];
+    [self drawInCurrentContext];
+    CGContextRestoreGState(context);
+
 }
 
 - (UIImage *)getImageWithSize:(CGSize)size
@@ -37,7 +60,7 @@
 
 - (void)applyCTMTransformsForContext:(CGContextRef)context viewSize:(CGSize)viewSize
 {
-    CGSize graphicSize = [self originalSize];
+    CGSize graphicSize = self.originalSize;
 
     switch(self.contentMode)
     {
@@ -89,12 +112,7 @@
 
 - (void)drawInCurrentContext
 {
-    return;
-}
-
-- (CGSize)originalSize
-{
-    return CGSizeZero;
+    self.drawingBlock();
 }
 
 @end

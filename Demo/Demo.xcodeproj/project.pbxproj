@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5B3C0951860DFDE00CF8B1E /* ManualDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B3C0921860DFDE00CF8B1E /* ManualDrawingViewController.m */; };
+		F5B3C0961860DFDE00CF8B1E /* UsingBlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B3C0941860DFDE00CF8B1E /* UsingBlocksViewController.m */; };
 		F5D8204C1854F003000E47D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D8204B1854F003000E47D5 /* Foundation.framework */; };
 		F5D8204E1854F003000E47D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D8204D1854F003000E47D5 /* CoreGraphics.framework */; };
 		F5D820501854F004000E47D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D8204F1854F003000E47D5 /* UIKit.framework */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5B3C0911860DFDE00CF8B1E /* ManualDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualDrawingViewController.h; sourceTree = "<group>"; };
+		F5B3C0921860DFDE00CF8B1E /* ManualDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualDrawingViewController.m; sourceTree = "<group>"; };
+		F5B3C0931860DFDE00CF8B1E /* UsingBlocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsingBlocksViewController.h; sourceTree = "<group>"; };
+		F5B3C0941860DFDE00CF8B1E /* UsingBlocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsingBlocksViewController.m; sourceTree = "<group>"; };
 		F5D820481854F003000E47D5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D8204B1854F003000E47D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5D8204D1854F003000E47D5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -167,6 +173,10 @@
 		F5D820921854F087000E47D5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F5B3C0911860DFDE00CF8B1E /* ManualDrawingViewController.h */,
+				F5B3C0921860DFDE00CF8B1E /* ManualDrawingViewController.m */,
+				F5B3C0931860DFDE00CF8B1E /* UsingBlocksViewController.h */,
+				F5B3C0941860DFDE00CF8B1E /* UsingBlocksViewController.m */,
 				F5D820831854F068000E47D5 /* TestSelectionViewController.h */,
 				F5D820841854F068000E47D5 /* TestSelectionViewController.m */,
 				F5D82098185647CC000E47D5 /* TransformViewController.h */,
@@ -285,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B3C0951860DFDE00CF8B1E /* ManualDrawingViewController.m in Sources */,
+				F5B3C0961860DFDE00CF8B1E /* UsingBlocksViewController.m in Sources */,
 				F5D8209E1856779A000E47D5 /* ImageExampleViewController.m in Sources */,
 				F5D8208B1854F068000E47D5 /* VectorTestClasses.m in Sources */,
 				F5D820891854F068000E47D5 /* TestSelectionViewController.m in Sources */,

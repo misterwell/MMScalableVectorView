@@ -32,6 +32,24 @@
 @interface MMScalableVectorView : UIView <VectorGraphicDrawer>
 
 /**
+ *  Designated initializer when using this class directly, rather than subclassing.
+ *
+ *  @param frame        View's frame
+ *  @param drawingBlock Block of code responsible for drawing the vector
+ *  @param originalSize The size of vector.
+ *
+ *  @return An initialized object that can be used as a subview or drawn manually in some other drawRect method.
+ */
+- (id)initWithFrame:(CGRect)frame drawingBlock:(void (^)(void))drawingBlock originalSize:(CGSize)originalSize;
+
+/**
+ *  Performs the drawing block, scaled to the specified frame and according to the receiver's contentMode property.
+ *
+ *  @param frame Frame to draw the vector in.
+ */
+- (void)drawInFrame:(CGRect)frame;
+
+/**
  *  Returns a UIImage representation of the receiver. This is useful if you can't pass a UIView to another component, i.e. a UIButton background image.
  *
  *  @param size Desired size of the returned UIImage
