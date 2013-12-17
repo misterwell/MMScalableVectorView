@@ -30,7 +30,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context);
     
-    [self applyCTMTransformsForContext:context viewSize:self.bounds.size];
+    [self applyCTMTransformsForContext:context frame:self.bounds];
     [self drawInCurrentContext];
     CGContextRestoreGState(context);
 }
@@ -40,8 +40,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context);
     
-    CGContextTranslateCTM(context, frame.origin.x, frame.origin.y);
-    [self applyCTMTransformsForContext:context viewSize:frame.size];
+    [self applyCTMTransformsForContext:context frame:frame];
     [self drawInCurrentContext];
     CGContextRestoreGState(context);
 
@@ -50,7 +49,7 @@
 - (UIImage *)getImageWithSize:(CGSize)size
 {
     UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
-    [self applyCTMTransformsForContext:UIGraphicsGetCurrentContext() viewSize:size];
+    [self applyCTMTransformsForContext:UIGraphicsGetCurrentContext() frame:CGRectMake(0.0f, 0.0f, size.width, size.height)];
     [self drawInCurrentContext];
     UIImage *returnImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -58,10 +57,14 @@
     return returnImage;
 }
 
-- (void)applyCTMTransformsForContext:(CGContextRef)context viewSize:(CGSize)viewSize
+- (void)applyCTMTransformsForContext:(CGContextRef)context frame:(CGRect)frame
 {
     CGSize graphicSize = self.originalSize;
+    CGSize viewSize = frame.size;
 
+    // Translate by the origin of the frame to begin with.
+    CGContextTranslateCTM(context, frame.origin.x, frame.origin.y);
+    
     switch(self.contentMode)
     {
         case UIViewContentModeScaleToFill:
@@ -71,6 +74,7 @@
         case UIViewContentModeScaleAspectFit:
         {
             CGFloat scale = MIN(viewSize.width/graphicSize.width, viewSize.height/graphicSize.height);
+            CGContextTranslateCTM(context, (viewSize.width-(graphicSize.width*scale))/2.0f, (viewSize.height-(graphicSize.height*scale))/2.0f);
             CGContextScaleCTM(context, scale, scale);
             break;
         }
