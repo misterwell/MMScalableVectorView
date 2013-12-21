@@ -13,7 +13,7 @@ Turns static PaintCode or Qwarkee code into a UIView that honors its contentMode
 
 
 ## Installation
-#### CocoaPods (coming soon)
+#### CocoaPods
 	pod "MMScalableVectorView"
 #### Manually
 Just import MMScalableVectorView.m & .h into your project directly.
