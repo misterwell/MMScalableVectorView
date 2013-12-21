@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "http://www.github.com/misterwell/MMScalableVectorView"
   s.screenshots  = "http://michaelmaxwell.info/wordpress/wp-content/uploads/2013/12/scaledVector.png"
-  s.license      = 'GPLv2'
+  s.license      = 'MIT'
   s.author       = { "Mike Maxwell" => "misterwell@gmail.com" }
   s.source       = { :git => "https://github.com/misterwell/MMScalableVectorView.git", :tag => s.version.to_s }
   s.platform     = :ios, '5.0'
